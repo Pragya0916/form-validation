@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Form Validation</title>
+
+</head>
+<body>
+    <div id="main_container">
+        <div id="inner_container">
+            <h1 id="heading">Enter the Details</h1>
+            <form class="myForm" name="myForm" onsubmit="return validateForm()" method="post" >
+                <div id="container_coloumn">
+                <div  class="formdesign" >
+                <label for="fname">First Name</label>
+                <input type="text" class="name" id="fname"  required> <br>  <span class="formerror" id="fError"></span></div><br>
+
+                <div class="formdesign" >
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" class="name"> <br> <span class="formerror" id="lError"></span> </div> <br>
+
+                <div class="formdesign">
+                <label for="num">Contact Number</label>
+                <input type="number"  id="num"><br><span class="formerror" id="numErr"></span> </div> <br>
+
+                <div class="formdesign" >
+                <label for="email">Email Address </label>
+                <input type="email"  id="email"> 
+                <br> <span class="formerror" id="emailErr"></span> </div> <br>
+
+                <div class="formdesign" >
+                <label for="pass">Password</label>
+                <input type="password" id="pass"> 
+                <br>
+            <span class="formerror" id="passErr"></span> </div> <br> 
+
+                <div class="formdesign" >
+                <label for="cpass">Confirm Password</label>
+                <input type="password" id="cpass" ><br> <span class="formerror" id="cpassErr"></span> </div><br>
+
+            </div>
+            <div class="formdesign" > 
+                <input type="checkbox" id="check">Accepting all the <a href="#">Terms and Conditions.</a></div>
+                <input type="submit" value="Submit All the Details" id="btn">
+                <br> <br>
+                </form>
+               
+        </div>
+    </div>
+    <script src="scritpt.js"></script>
+</body>
+</html>
